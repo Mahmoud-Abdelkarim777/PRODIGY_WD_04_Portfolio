@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmoud - Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./dist/style.css">
+
+    
+
+
+</head>
+<body class="flex flex-col items-center">
+    <!-- start header  -->
+    <header class='shadow-md font-sans tracking-wide relative z-50 w-full'>
+        <div class='flex flex-wrap items-center justify-between gap-4 px-10 py-4 bg-main min-h-[70px]'>
+            <p class="font-bold text-2xl cursor-pointer	"><span class="text-white hover:text-black">MAHMOUD</span>.JS </p>
+            <div id="collapseMenu" class=' max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
+                <button id="toggleClose" class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-black" viewBox="0 0 320.591 320.591">
+                        <path
+                            d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                            data-original="#000000">
+                        </path>
+                        <path
+                            d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                            data-original="#000000">
+                        </path>
+                    </svg>
+                </button>
+                <ul class='lg:flex lg:gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-main max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+                    <li class='mb-6 hidden max-lg:block'>
+                        <p class="font-bold text-2xl"><span class="text-white">MAHMOUD</span>.JS </p>
+                    </li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'>
+                        <a href='javascript:void(0)' class='hover:text-black text-white block font-bold text-[15px]'>Home</a>
+                    </li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'>
+                        <a href='javascript:void(0)' class='hover:text-black text-white block font-bold text-[15px]'>About</a>
+                    </li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'>
+                        <a href='javascript:void(0)' class='hover:text-black text-white block font-bold text-[15px]'>Projects</a>
+                    </li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'>
+                        <a href='javascript:void(0)' class='hover:text-black text-white block font-bold text-[15px]'>Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class='flex max-lg:ml-auto'>
+            <button id="toggleOpen" class='lg:hidden'>
+                <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd">
+                    </path>
+                </svg>
+            </button>
+            </div>
+        </div>
+    </header>
+    <!-- end header  -->
+    <!-- start hero section  -->
+    <section id="hero" class="container px-10 mt-5 text-center relative">
+        <p class="text-lg font-bold">Hello <i class="fa-solid fa-hand"></i> I'm </p>
+        <p class="text-4xl font-bold animate-name-typing inline-block whitespace-nowrap overflow-hidden border-r-4 border-black	">Mahmoud</p>
+        <p class="text-2xl font-bold opacity-45">Front End Developer</p>
+        <p class="text-lg">
+            Welcome to my personal website, I'm really very happy for you to visit my website. <br>
+            I hope you like my portfolio.
+        </p>
+        <ul class="absolute left-1/2  -translate-x-1/2 flex gap-4  mb-5 sm:left-0 sm:translate-x-1/2 sm:flex-col sm:bottom-0">
+            <li><a href=""><i class="fa-brands fa-linkedin text-2xl"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-github text-2xl"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-envelope text-2xl"></i></a></li>
+        </ul>
+        <div class="resume flex gap-0 flex-col justify-center items-center	sm:flex-row sm:gap-4 mb-4">
+            <a href="./cv/Mahmoud_Abdelkarim Khalaf_Resume.pdf" download class="hover:-translate-y-2 transition-all duration-500 bg-white  text-black border-2  hover:bg-black hover:text-white font-bold py-2 px-4 rounded mt-10">
+                Download CV
+            </a>
+            <button class="hover:-translate-y-2 transition-all duration-500 bg-main hover:bg-black text-white font-bold py-2 px-4 rounded mt-4 sm:mt-10">
+                Let's Talk
+            </button>
+        </div>
+    </section>
+    <!-- end hero section  -->
+    <!-- start about me -->
+    <section class="container p-2 mt-5 mb-5">
+        <div class="component relative ">
+            <p class="text-center text-lg">Get To Know</p>
+            <p class="text-center pb-5 font-bold text-5xl text-main">About Me</p>
+            <p class="after:content-[''] bg-black h-[3px] left-1/2 w-[150px] absolute -translate-x-1/2"></p>
+        </div>
+        <div class="mt-5">
+            <p class="text-lg">
+                Hello there, <br>
+                My name is Mahmoud Abdelkarim, I'm a React.js frontend web developer. <br>
+                During this duration, i have learned a lot of technologies like crud, created many cool website projects. <br>
+                So i'm always seeking to have an opportunity that matches my skills, to make the best use of all that i have learned.
+            </p>
+        </div>
+        <div class="container mt-5">
+            <p class="p-2 bg-main w-44 rounded-lg font-bold mb-5">WORK EXPERIENCE</p>
+            <ul class="list-inside [list-style-type:circle]">
+                <li>
+                    Internship as front-End Developer ReactJs at Ejada company (FullTime - Remote) (May 2024 - August 2024).</li>
+                <li>
+                    Internship as front-End Developer at ITI (HTML & CSS) (Feb 2024 ) .
+                </li>
+                <li>
+                    Internship as front end at Prodigy info tech company ( Remote) ( 1th September 2024 - Present).
+                </li>
+                <li>
+                    Training front end in MSP Tech Club - Al Azhar University (2023).
+                </li>
+            </ul>
+        </div>
+        <div class="container mt-5">
+            <p class="p-2 bg-main w-44 rounded-lg font-bold mb-5">EDUCATION</p>
+            <ul class="list-inside [list-style-type:circle]">
+                <li>
+                    Graduated from Faculty of computers and information Assiut University <a href="https://www.eelu.edu.eg/" target="_blank">( EELU )</a> (2020 - 2024)</li>
+            </ul>
+        </div>
+    </section>
+    <!-- end about me -->
+    <!-- start skills  -->
+    <section class="container p-2">
+        <div class="relative "></div>
+            <p class="text-center text-lg">What Skills I Have</p>
+            <p class="text-center pb-5 font-bold text-5xl text-main">My Skills</p>
+            <p class="after:content-[''] bg-black h-[3px] left-1/2  w-[150px] absolute -translate-x-1/2"></p>
+        </div>
+        <div class="mt-5">
+            <swiper-container
+            class="mySwiper" 
+            
+            loop="true" 
+            speed="1100" 
+            autoplay="true" 
+            autoplay-delay="0" 
+            autoplay-disable-on-interaction="false"
+            breakpoints='{
+                "767": {
+                    "slidesPerView": 1
+                },
+                "992": {
+                    "slidesPerView": 2
+                },
+                "1200": {
+                    "slidesPerView": 3
+                }
+            }'
+            >
+                <swiper-slide>
+                    <div class="flex items-center justify-center flex-col">
+                        <i class="fa-brands fa-html5 text-7xl"></i>
+                        <P>HTML 5</P>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="flex items-center justify-center flex-col">
+                        <i class="fa-brands fa-css3-alt text-7xl"></i>
+                        <p>CSS 3</p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="flex items-center justify-center flex-col">
+                        <i class="fa-brands fa-bootstrap text-7xl"></i>
+                        <P>BOOTSTRAP</P>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="flex items-center justify-center flex-col gap-5">
+                        <img src="./images/tailwind.png" width="80px" alt="foto">
+                        <P>Tailwind CSS</P>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="flex items-center justify-center flex-col">
+                        <i class="fa-brands fa-js text-7xl"></i>
+                        <P>JS</P>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="flex items-center justify-center flex-col">
+                        <i class="fa-brands fa-react text-7xl"></i>
+                        <P>REACT</P>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="flex items-center justify-center flex-col">
+                        <i class="fa-brands fa-github text-7xl"></i>
+                        <P>GITHUB</P>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+    </section>
+    <!-- end skills  -->
+    <!-- start service  -->
+    <section>
+        <div class="component relative "></div>
+            <p class="text-center text-lg">What i offer</p>
+            <p class="text-center pb-5 font-bold text-5xl text-main">Services</p>
+            <p class="after:content-[''] bg-black h-[3px] left-1/2 w-[150px] absolute -translate-x-1/2"></p>
+        </div>
+        
+    </section>
+    <!-- end service  -->
+    
+<footer>
+    <p>&copy; 2024 Mahmoud. All Rights Reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    
+</body>
+</html>
