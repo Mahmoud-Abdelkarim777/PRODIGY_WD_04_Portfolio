@@ -9,8 +9,12 @@ module.exports = {
         main: '#00A5A4',
         white: '#ffffff',
         test: '#94a3b8',
-        secondary: '#ccedec'
-        
+        secondary: '#ccedec',
+        sub_main: {
+          800: 'rgba(204, 237, 236, 0.8)',  // 10% opacity
+          
+        },
+
       },
       keyframes: {
         typing: {

@@ -14,7 +14,7 @@ toggleOpen.addEventListener('click', handleClick);
 toggleClose.addEventListener('click', handleClick);
 {/* <div style="background: linear-gradient(90deg, rgb(255, 255, 255) 10%, rgba(255, 255, 255, 0) 80%);"> */}
 
-// animation fo component of tilte
+//start animation fo component of tilte
 
 document.addEventListener('DOMContentLoaded', function () {
   const targetElements = document.querySelectorAll('.fade-in-up');
@@ -36,5 +36,38 @@ document.addEventListener('DOMContentLoaded', function () {
     observer.observe(el);
   });
 });
+//end animation fo component of tilte
+// function show component of projects
+
+let box_css = document.getElementById('box_css');
+let box_bootstrap = document.getElementById('box_bootstrap');
+
+function show_css() {
+  const box_css = document.getElementById('box_css');
+  let box_bootstrap = document.getElementById('box_bootstrap');
+
+  box_css.style.display = 'grid'; // Show the element by setting display to grid
+  box_bootstrap.style.display = 'none'; // Show the element by setting display to grid
+  setTimeout(() => {
+    // Apply the smooth transition after the element is visible
+    box_css.style.opacity = '1';
+    box_bootstrap.style.opacity = '0';
+    box_css.style.transform = 'scale(1)';
+  }, 300); // A slight delay to allow the display change to take effect
+}
+function show_bootstrap() {
+  const box_bootstrap = document.getElementById('box_bootstrap');
+  const box_css = document.getElementById('box_css');
+
+  box_bootstrap.style.display = 'grid'; // Show the element by setting display to grid
+  box_css.style.display = 'none'; // Show the element by setting display to grid
+  setTimeout(() => {
+    // Apply the smooth transition after the element is visible
+    box_bootstrap.style.opacity = '1';
+    box_css.style.opacity = '0';
+    box_bootstrap.style.transform = 'scale(1)';
+  }, 300); // A slight delay to allow the display change to take effect
+}
+
 
 
