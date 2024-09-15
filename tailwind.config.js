@@ -10,6 +10,7 @@ module.exports = {
         white: '#ffffff',
         test: '#94a3b8',
         secendary: '#ccedec'
+        
       },
       keyframes: {
         typing: {
