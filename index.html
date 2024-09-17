@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./dist/style.css">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
     
 
@@ -507,24 +509,71 @@
     </section>
     <!-- end portfolio  -->
     <!-- start contact  -->
-    <section>
-        <div class=" relative mb-5"></div>
+    <section class="container p-2">
+        <div class=" relative mb-5">
             <p class="text-center text-lg ">Get In Touch</p>
             <p class="text-center pb-5 font-bold text-5xl text-main fade-in-up animate-delay ">Contact Me</p>
             <p class="after:content-[''] bg-black h-[3px] left-1/2 w-[150px] absolute -translate-x-1/2 "></p>
         </div>
-        <div>
-            <a href="">
+        <div class=" grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div class="flex flex-col justify-between items-center">
+                <div class="text-center bg-secondary rounded-lg py-3 
+                    hover:bg-white border hover:border-main 
+                    transition-all duration-500 ease-in-out mb-5 
+                    w-full h-1/2 md:w-3/4 
+                    flex flex-col items-center justify-center gap-3">
+                    <div><i class="text-3xl font-bold  fa-brands fa-whatsapp text-main"></i></div>
+                    <p class="text-lg font-bold">whats App</p>
+                    <p class="text-lg font-bold">+201018253715</p>
+                    <a href="https://wa.me/201018253715" target="_blank"><p class="text-lg font-bold text-main hover:text-black">Send a message</p></a>
+                </div>
+                <div class="text-center bg-secondary rounded-lg py-3 
+                    hover:bg-white border hover:border-main 
+                    transition-all duration-500 ease-in-out 
+                    w-full h-1/2 md:w-3/4
+                    flex flex-col items-center justify-center gap-3">
+                    <div><i class="text-3xl font-bold fa-brands fa-linkedin text-main"></i></div>
+                    <p class="text-lg font-bold">Linked In</p>
+                    <p class="text-lg font-bold">Mahmoud Abdelkarim 🇵🇸</p>
+                    <a href="https://www.linkedin.com/in/mahmoud-abdelkarim-%F0%9F%87%B5%F0%9F%87%B8-487452229/" target="_blank"><p class="text-lg font-bold text-main hover:text-black">Send a message</p></a>
+                </div>
+            </div>
+            <div>
+                <form id="contactForm" action="https://formspree.io/f/mrbzvdvr" method="POST" class="w-full" target="_blank">
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" class="border border-main p-3 mb-3 rounded-lg w-full" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" class="border border-main p-3 mb-3 rounded-lg w-full" required>
+                    <textarea name="message" id="message" rows="7" placeholder="Your Message" class="border border-main p-3 mb-3 rounded-lg w-full" required></textarea>
+                    <input type="submit" value="Send Msg to Gmail" class="bg-main text-white p-3 rounded-lg cursor-pointer" >
+                </form>
                 
-            </a>
+            </div>
         </div>
     </section>
     <!-- end contact  -->
-<footer>
-    <p>&copy; 2024 Mahmoud. All Rights Reserved.</p>
+    <!-- start footer  -->
+<footer class="w-full bg-main p-2 ">
+    <div class="text-center">
+        <p class="font-bold text-3xl my-5">MAHMOUD.JS</p>
+        <ul class="flex flex-col md:flex-row justify-center items-center gap-6 mb-5">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+        <div class="mb-5">
+            <ul class="flex justify-center items-center gap-5">
+                <li><a href=""><i class="fa-brands fa-linkedin text-2xl"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-github text-2xl"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-envelope text-2xl"></i></a></li>
+            </ul>
+        </div>
+        <p class="mb-20">&copy; 2024 Mahmoud. All Rights Reserved.</p>
+    </div>
 </footer>
-
-<script src="js/main.js"></script>
+<!-- end footer  -->
+<script defer type="module" src="js/main.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 

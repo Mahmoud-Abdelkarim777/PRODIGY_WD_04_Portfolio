@@ -1,3 +1,4 @@
+
 var toggleOpen = document.getElementById('toggleOpen');
 var toggleClose = document.getElementById('toggleClose');
 var collapseMenu = document.getElementById('collapseMenu');
@@ -130,6 +131,7 @@ function show_react() {
   }, 300); // A slight delay to allow the display change to take effect
 }
 //end function show component of react
+
 
 
 
