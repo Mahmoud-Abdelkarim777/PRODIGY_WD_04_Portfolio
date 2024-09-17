@@ -3,13 +3,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 @keyframes slideUp {
     from {
-        /* transform: translateX(200px); */
+        transform: translatey(100px);
         opacity: 0;
     }
     to {
-        transform: translateX(0);
+        transform: translatey(0);
         opacity: 1;
     }
 }
@@ -18,8 +21,54 @@
     opacity: 0; /* Make items hidden at the beginning */
 }
 
-.animate {
-    animation: slideUp 1s ease-out forwards;
+.animate-slide-up {
+    animation: slideUp 700ms ease-out forwards;
+}
+.animate-delay{
+    animation-delay: 0.3s;
+}
+/* vxdffg */
+.hidden-nav {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.visible-nav {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* You can add your other custom styles here */
+/* Default icon color (gray) */
+nav ul li a i {
+    transition: color 0.3s ease;
+}
+
+/* Active icon color (white) */
+nav ul li a.active i {
+    color: #00A5A4;
+}
+
+/* footer  */
+@keyframes footer {
+    from {
+        transform: translatey(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+
+.fade-in-up-footer {
+    opacity: 0; /* Make items hidden at the beginning */
+}
+
+.animate-footer {
+    animation: footer 1s ease-out forwards;
 }
 .animate-delay{
     animation-delay: 0.3s;

@@ -61,10 +61,22 @@
             </button>
             </div>
         </div>
+        <nav id="scrollNav" class="hidden-nav">
+            <div class="border border-main w-72 p-3 rounded-3xl bg-secondary opacity-70 fixed bottom-3 left-1/2 -translate-x-1/2">
+                <ul class="flex justify-around items-center">
+                    <li><a href="#home"><i class="fa-solid fa-house font-bold text-lg"></i></a></li>
+                    <li><a href="#about"><i class="fa-solid fa-user-large font-bold text-lg"></i></a></li>
+                    <li><a href="#skills"><i class="fa-solid fa-layer-group font-bold text-lg"></i></a></li>
+                    <li><a href="#services"><i class="fa-solid fa-taxi font-bold text-lg"></i></a></li>
+                    <li><a href="#portfolio"><i class="fa-solid fa-book font-bold text-lg"></i></a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-address-card font-bold text-lg"></i></a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <!-- end header  -->
     <!-- start hero section  -->
-    <section id="hero" class="container px-10 mt-5 text-center relative">
+    <section id="home" class="container px-10 mt-5 text-center relative">
         <p class="text-lg font-bold">Hello <i class="fa-solid fa-hand"></i> I'm </p>
         <p class="text-4xl font-bold animate-name-typing inline-block whitespace-nowrap overflow-hidden border-r-4 border-black	">Mahmoud</p>
         <p class="text-2xl font-bold opacity-45">Front End Developer</p>
@@ -73,9 +85,9 @@
             I hope you like my portfolio.
         </p>
         <ul class="absolute left-1/2  -translate-x-1/2 flex gap-4  mb-5 sm:left-0 sm:translate-x-1/2 sm:flex-col sm:bottom-0">
-            <li><a href=""><i class="fa-brands fa-linkedin text-2xl"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-github text-2xl"></i></a></li>
-            <li><a href=""><i class="fa-solid fa-envelope text-2xl"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/mahmoud-abdelkarim-%F0%9F%87%B5%F0%9F%87%B8-487452229/"><i class="fa-brands fa-linkedin text-2xl"></i></a></li>
+            <li><a href="https://github.com/Mahmoud-Abdelkarim777"><i class="fa-brands fa-github text-2xl"></i></a></li>
+            <li><a href="mailto:mabdelkarimkhalaf777@gmail.com"><i class="fa-solid fa-envelope text-2xl"></i></a></li>
         </ul>
         <div class="resume flex w-full gap-0 flex-col justify-center items-center	sm:flex-row sm:gap-4 mb-4">
             <a href="./cv/Mahmoud_Abdelkarim Khalaf_Resume.pdf" download class="hover:-translate-y-2 transition-all duration-500 bg-white  text-black border-2  hover:bg-black hover:text-white font-bold py-2 px-4 rounded mt-10">
@@ -88,7 +100,7 @@
     </section>
     <!-- end hero section  -->
     <!-- start about me -->
-    <section class="container p-2 mt-5 mb-5">
+    <section id="about" class="container p-2 mt-5 mb-5">
         <div class="component relative ">
             <p class="text-center text-lg">Get To Know</p>
             <p class="text-center pb-5 font-bold text-5xl text-main fade-in-up animate-delay">About Me</p>
@@ -128,7 +140,7 @@
     </section>
     <!-- end about me -->
     <!-- start skills  -->
-    <section class="container p-2">
+    <section id="skills" class="container p-2">
         <div class="relative "></div>
             <p class="text-center text-lg">What Skills I Have</p>
             <p class="text-center pb-5 font-bold text-5xl text-main fade-in-up animate-delay">My Skills</p>
@@ -155,20 +167,20 @@
                 }
             }'
             >
-                <swiper-slide>
-                    <div class="flex items-center justify-center flex-col">
+                <swiper-slide class="relative">
+                    <div class="flex items-center justify-center flex-col ">
                         <i class="fa-brands fa-html5 text-7xl"></i>
                         <P>HTML 5</P>
                     </div>
                 </swiper-slide>
                 <swiper-slide>
-                    <div class="flex items-center justify-center flex-col">
+                    <div class="flex items-center justify-center flex-col ">
                         <i class="fa-brands fa-css3-alt text-7xl"></i>
                         <p>CSS 3</p>
                     </div>
                 </swiper-slide>
                 <swiper-slide>
-                    <div class="flex items-center justify-center flex-col">
+                    <div class="flex items-center justify-center flex-col ">
                         <i class="fa-brands fa-bootstrap text-7xl"></i>
                         <P>BOOTSTRAP</P>
                     </div>
@@ -180,19 +192,19 @@
                     </div>
                 </swiper-slide>
                 <swiper-slide>
-                    <div class="flex items-center justify-center flex-col">
+                    <div class="flex items-center justify-center flex-col ">
                         <i class="fa-brands fa-js text-7xl"></i>
                         <P>JS</P>
                     </div>
                 </swiper-slide>
                 <swiper-slide>
-                    <div class="flex items-center justify-center flex-col">
+                    <div class="flex items-center justify-center flex-col ">
                         <i class="fa-brands fa-react text-7xl"></i>
                         <P>REACT</P>
                     </div>
                 </swiper-slide>
                 <swiper-slide>
-                    <div class="flex items-center justify-center flex-col">
+                    <div class="flex items-center justify-center flex-col ">
                         <i class="fa-brands fa-github text-7xl"></i>
                         <P>GITHUB</P>
                     </div>
@@ -202,7 +214,7 @@
     </section>
     <!-- end skills  -->
     <!-- start service  -->
-    <section class="container p-2  bg-secondary mt-5">
+    <section id="services" class="container p-2  bg-secondary mt-5">
         <div class=" relative mb-5">
             <p class="text-center text-lg ">What I offer</p>
             <p class="text-center pb-5 font-bold text-5xl text-main fade-in-up animate-delay ">Services</p>
@@ -233,9 +245,9 @@
     </section>
     <!-- end service  -->
     <!-- start portfolio  -->
-    <section class="container p-2">
+    <section id="portfolio" class="container p-2">
         <div class=" relative mb-5">
-            <p class="text-center text-lg ">My Recent Work</p>
+            <p class="text-center text-lg font-bold ">My Recent Work</p>
             <p class="text-center pb-5 font-bold text-5xl text-main fade-in-up animate-delay ">Portfolio</p>
             <p class="after:content-[''] bg-black h-[3px] left-1/2 w-[150px] absolute -translate-x-1/2 "></p>
         </div>
@@ -509,9 +521,9 @@
     </section>
     <!-- end portfolio  -->
     <!-- start contact  -->
-    <section class="container p-2">
+    <section id="contact" class="container p-2">
         <div class=" relative mb-5">
-            <p class="text-center text-lg ">Get In Touch</p>
+            <p class="text-center font-bold text-lg ">Get In Touch</p>
             <p class="text-center pb-5 font-bold text-5xl text-main fade-in-up animate-delay ">Contact Me</p>
             <p class="after:content-[''] bg-black h-[3px] left-1/2 w-[150px] absolute -translate-x-1/2 "></p>
         </div>
@@ -543,7 +555,7 @@
                     <input type="text" id="name" name="name" placeholder="Your Full Name" class="border border-main p-3 mb-3 rounded-lg w-full" required>
                     <input type="email" id="email" name="email" placeholder="Your Email" class="border border-main p-3 mb-3 rounded-lg w-full" required>
                     <textarea name="message" id="message" rows="7" placeholder="Your Message" class="border border-main p-3 mb-3 rounded-lg w-full" required></textarea>
-                    <input type="submit" value="Send Msg to Gmail" class="bg-main text-white p-3 rounded-lg cursor-pointer" >
+                    <input type="submit" value="Send Msg to Gmail" class="bg-main text-white hover:text-black hover:bg-white border border-main font-bold p-3 rounded-lg cursor-pointer" >
                 </form>
                 
             </div>
@@ -551,29 +563,29 @@
     </section>
     <!-- end contact  -->
     <!-- start footer  -->
-<footer class="w-full bg-main p-2 ">
+<footer class="w-full bg-main p-2 fade-in-up-footer">
     <div class="text-center">
-        <p class="font-bold text-3xl my-5">MAHMOUD.JS</p>
+        <p class="font-bold text-3xl my-5 cursor-pointer">MAHMOUD.JS</p>
         <ul class="flex flex-col md:flex-row justify-center items-center gap-6 mb-5">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="#home" class="font-bold text-lg hover:text-white">Home</a></li>
+            <li><a href="#about" class="font-bold text-lg hover:text-white">About</a></li>
+            <li><a href="#skills" class="font-bold text-lg hover:text-white">Skills</a></li>
+            <li><a href="#services" class="font-bold text-lg hover:text-white">Services</a></li>
+            <li><a href="#portfolio" class="font-bold text-lg hover:text-white">Portfolio</a></li>
+            <li><a href="#contact" class="font-bold text-lg hover:text-white">Contact Us</a></li>
         </ul>
         <div class="mb-5">
             <ul class="flex justify-center items-center gap-5">
-                <li><a href=""><i class="fa-brands fa-linkedin text-2xl"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-github text-2xl"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-envelope text-2xl"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/mahmoud-abdelkarim-%F0%9F%87%B5%F0%9F%87%B8-487452229/" target="_blank"><i class="fa-brands fa-linkedin font-bold text-lg  hover:text-white rounded-lg"></i></a></li>
+                <li><a href="https://github.com/Mahmoud-Abdelkarim777" target="_blank"><i class="fa-brands fa-github font-bold text-lg  hover:text-white rounded-2xl"></i></a></li>
+                <li><a href="mailto:mabdelkarimkhalaf777@gmail.com?subject=Hello&body=I wanted to reach out to you." target="_blank"><i class="fa-solid fa-envelope font-bold text-lg  hover:text-white rounded-2xl"></i></a></li>
             </ul>
         </div>
-        <p class="mb-20">&copy; 2024 Mahmoud. All Rights Reserved.</p>
+        <p class="mb-20 font-bold">&copy; 2024 Mahmoud. All Rights Reserved.</p>
     </div>
 </footer>
 <!-- end footer  -->
-<script defer type="module" src="js/main.js"></script>
+<script defer src="js/main.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 

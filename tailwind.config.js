@@ -28,7 +28,7 @@ module.exports = {
         },
       },
       animation: {
-        // 'name-typing': 'typing 5s steps(30, end) infinite, blink 1s step-end infinite',
+        'name-typing': 'typing 5s steps(30, end) infinite, blink 1s step-end infinite',
       },
     },
   },
