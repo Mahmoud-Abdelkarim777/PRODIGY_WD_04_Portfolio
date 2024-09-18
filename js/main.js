@@ -1,4 +1,4 @@
-
+// start bar function 
 var toggleOpen = document.getElementById('toggleOpen');
 var toggleClose = document.getElementById('toggleClose');
 var collapseMenu = document.getElementById('collapseMenu');
@@ -13,7 +13,7 @@ function handleClick() {
 
 toggleOpen.addEventListener('click', handleClick);
 toggleClose.addEventListener('click', handleClick);
-{/* <div style="background: linear-gradient(90deg, rgb(255, 255, 255) 10%, rgba(255, 255, 255, 0) 80%);"> */}
+// end bar function 
 
 //start animation fo component of tilte
 
@@ -38,33 +38,32 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 //end animation fo component of tilte
-// functions show component of projects
 
-let box_css = document.getElementById('box_css');
-let box_bootstrap = document.getElementById('box_bootstrap');
-let box_tailwind = document.getElementById('box_tailwind');
-let box_react = document.getElementById('box_react');
+//start functions show component of projects
+
 //start function show component of css 
 function show_css() {
   const box_css = document.getElementById('box_css');
   const box_bootstrap = document.getElementById('box_bootstrap');
   const box_tailwind = document.getElementById('box_tailwind');
+  const box_javascript = document.getElementById('box_javascript');
   const box_react = document.getElementById('box_react');
 
   box_css.style.display = 'grid'; // Show the element by setting display to grid
   box_bootstrap.style.display = 'none'; // Show the element by setting display to grid
   box_tailwind.style.display = 'none'; // Show the element by setting display to grid
+  box_javascript.style.display = 'none'; // Show the element by setting display to grid
   box_react.style.display = 'none'; // Show the element by setting display to grid
   setTimeout(() => {
     // Apply the smooth transition after the element is visible
     box_css.style.opacity = '1';
     box_bootstrap.style.opacity = '0';
     box_tailwind.style.opacity = '0';
+    box_javascript.style.opacity = '0';
     box_react.style.opacity = '0';
     box_css.style.transform = 'scale(1)';
   }, 300); // A slight delay to allow the display change to take effect
 }
-
 //end function show component of css
 
 //start function show component of bootstrap
@@ -72,17 +71,20 @@ function show_bootstrap() {
   const box_css = document.getElementById('box_css');
   const box_bootstrap = document.getElementById('box_bootstrap');
   const box_tailwind = document.getElementById('box_tailwind');
+  const box_javascript = document.getElementById('box_javascript');
   const box_react = document.getElementById('box_react');
 
   box_bootstrap.style.display = 'grid'; // Show the element by setting display to grid
   box_css.style.display = 'none'; // Show the element by setting display to grid
   box_tailwind.style.display = 'none'; // Show the element by setting display to grid
+  box_javascript.style.display = 'none'; // Show the element by setting display to grid
   box_react.style.display = 'none'; // Show the element by setting display to grid
   setTimeout(() => {
     // Apply the smooth transition after the element is visible
     box_bootstrap.style.opacity = '1';
     box_css.style.opacity = '0';
     box_tailwind.style.opacity = '0';
+    box_javascript.style.opacity = '0';
     box_react.style.opacity = '0';
     box_bootstrap.style.transform = 'scale(1)';
   }, 300); // A slight delay to allow the display change to take effect
@@ -94,46 +96,79 @@ function show_tailwind() {
   const box_css = document.getElementById('box_css');
   const box_bootstrap = document.getElementById('box_bootstrap');
   const box_tailwind = document.getElementById('box_tailwind');
+  const box_javascript = document.getElementById('box_javascript');
   const box_react = document.getElementById('box_react');
 
   box_tailwind.style.display = 'grid'; // Show the element by setting display to grid
   box_bootstrap.style.display = 'none'; // Show the element by setting display to grid
   box_css.style.display = 'none'; // Show the element by setting display to grid
+  box_javascript.style.display = 'none'; // Show the element by setting display to grid
   box_react.style.display = 'none'; // Show the element by setting display to grid
   setTimeout(() => {
     // Apply the smooth transition after the element is visible
     box_tailwind.style.opacity = '1';
     box_bootstrap.style.opacity = '0';
     box_css.style.opacity = '0';
+    box_javascript.style.opacity = '0';
     box_react.style.opacity = '0';
     box_tailwind.style.transform = 'scale(1)';
   }, 300); // A slight delay to allow the display change to take effect
 }
 //end function show component of tailwind
 
+//start function show component of javascript
+function show_javascript() {
+  const box_css = document.getElementById('box_css');
+  const box_bootstrap = document.getElementById('box_bootstrap');
+  const box_tailwind = document.getElementById('box_tailwind');
+  const box_javascript = document.getElementById('box_javascript');
+  const box_react = document.getElementById('box_react');
+
+  box_javascript.style.display = 'grid'; // Show the element by setting display to grid
+  box_bootstrap.style.display = 'none'; // Show the element by setting display to grid
+  box_css.style.display = 'none'; // Show the element by setting display to grid
+  box_tailwind.style.display = 'none'; // Show the element by setting display to grid
+  box_react.style.display = 'none'; // Show the element by setting display to grid
+  setTimeout(() => {
+    // Apply the smooth transition after the element is visible
+    box_javascript.style.opacity = '1';
+    box_bootstrap.style.opacity = '0';
+    box_css.style.opacity = '0';
+    box_tailwind.style.opacity = '0';
+    box_react.style.opacity = '0';
+    box_tailwind.style.transform = 'scale(1)';
+  }, 300); // A slight delay to allow the display change to take effect
+}
+//end function show component of javascript
+
 //start function show component of react
 function show_react() {
   const box_css = document.getElementById('box_css');
   const box_bootstrap = document.getElementById('box_bootstrap');
   const box_tailwind = document.getElementById('box_tailwind');
+  const box_javascript = document.getElementById('box_javascript');
   const box_react = document.getElementById('box_react');
 
   box_react.style.display = 'grid'; // Show the element by setting display to grid
   box_css.style.display = 'none'; // Show the element by setting display to grid
   box_bootstrap.style.display = 'none'; // Show the element by setting display to grid
   box_tailwind.style.display = 'none'; // Show the element by setting display to grid
+  box_javascript.style.display = 'none'; // Show the element by setting display to grid
   setTimeout(() => {
     // Apply the smooth transition after the element is visible
     box_react.style.opacity = '1';
     box_css.style.opacity = '0';
     box_bootstrap.style.opacity = '0';
     box_tailwind.style.opacity = '0';
+    box_javascript.style.opacity = '0';
     box_react.style.transform = 'scale(1)';
   }, 300); // A slight delay to allow the display change to take effect
 }
 //end function show component of react
 
-// Wait until the DOM is fully loaded
+//end functions show component of projects
+
+//start function show fixed navbar
 document.addEventListener("DOMContentLoaded", function() {
   // Get the navigation bar element
   const navBar = document.getElementById('scrollNav');
@@ -151,7 +186,9 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 });
+//end function show fixed navbar
 
+//start animation of fixed navbar color
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('nav ul li a');
@@ -179,8 +216,9 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
-//start animation fo component of footer
+//end animation of fixed navbar color
 
+//start animation fo component of footer
 document.addEventListener('DOMContentLoaded', function () {
   const targetElements = document.querySelectorAll('.fade-in-up-footer');
 

@@ -5,7 +5,10 @@
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
+
+/*start Animation for tile */
 @keyframes slideUp {
     from {
         transform: translatey(100px);
@@ -16,7 +19,6 @@ html{
         opacity: 1;
     }
 }
-
 .fade-in-up {
     opacity: 0; /* Make items hidden at the beginning */
 }
@@ -27,7 +29,8 @@ html{
 .animate-delay{
     animation-delay: 0.3s;
 }
-/* vxdffg */
+/* end animation for title */
+/* start animation for navbar fixed */
 .hidden-nav {
     opacity: 0;
     visibility: hidden;
@@ -39,9 +42,9 @@ html{
     visibility: visible;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
+/* end animation for navbar fixed */
 
-/* You can add your other custom styles here */
-/* Default icon color (gray) */
+/* start animation for color of fixed navbar */
 nav ul li a i {
     transition: color 0.3s ease;
 }
@@ -50,8 +53,9 @@ nav ul li a i {
 nav ul li a.active i {
     color: #00A5A4;
 }
+/* end animation for color of fixed navbar */
 
-/* footer  */
+/* start animation for footer  */
 @keyframes footer {
     from {
         transform: translatey(200px);
@@ -73,3 +77,173 @@ nav ul li a.active i {
 .animate-delay{
     animation-delay: 0.3s;
 }
+/* end animation for footer */
+/* start swinging-animation */
+@keyframes swing-left-right {
+    0% {
+        transform: translateX(-1000px);
+    }
+    50% {
+        transform: translateX(200px);
+    }
+    75% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.swinging-animation-a {
+    animation: swing-left-right 2s ease-in-out;
+}
+@keyframes swing-right-left {
+    0% {
+        transform: translateX(1000px);
+    }
+    50% {
+        transform: translateX(-200px);
+    }
+    75% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.swinging-animation-btn {
+    animation: swing-right-left 2s ease-in-out;
+}
+/* end swinging-animation */
+/* start animation bigger then back to thier default size  */
+@keyframes zoom-in {
+    0% {
+        transform: scale(2); /* Start much bigger */
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        transform: scale(1); /* End at normal size */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.zoom-animation {
+    animation: zoom-in 2s ease-in-out; /* Adjust duration for smoother effect */
+
+}
+
+/* end animation bigger then back to thier default size  */
+
+/* animation for navbar  */
+@keyframes swing-right-left-1 {
+    0% {
+        transform: translateX(1000px);
+    }
+    50% {
+        transform: translateX(-200px);
+    }
+    75% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.swinging-animation-btn-1 {
+    animation: swing-right-left-1 2s ease-in-out;
+}
+@keyframes swing-right-left-2 {
+    0% {
+        transform: translateX(700px);
+    }
+    50% {
+        transform: translateX(-150px);
+    }
+    75% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.swinging-animation-btn-2 {
+    animation: swing-right-left-2 1.5s ease-in-out;
+}
+@keyframes swing-right-left-3 {
+    0% {
+        transform: translateX(500px);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+    75% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.swinging-animation-btn-3 {
+    animation: swing-right-left-3 1s ease-in-out;
+}
+
+@keyframes swing-right-left-a-1 {
+    0% {
+        transform: translateX(-1000px);
+    }
+    50% {
+        transform: translateX(200px);
+    }
+    75% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.swinging-animation-a-1 {
+    animation: swing-right-left-a-1 2s ease-in-out;
+}
+@keyframes swing-right-left-a-2 {
+    0% {
+        transform: translateX(-700px);
+    }
+    50% {
+        transform: translateX(150px);
+    }
+    75% {
+        transform: translateX(-30px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.swinging-animation-a-2 {
+    animation: swing-right-left-a-2 1.5s ease-in-out;
+}
+@keyframes swing-right-left-a-3 {
+    0% {
+        transform: translateX(-500px);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    75% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.swinging-animation-a-3 {
+    animation: swing-right-left-a-3 1s ease-in-out;
+}
+
+/* animation for navbar  */
