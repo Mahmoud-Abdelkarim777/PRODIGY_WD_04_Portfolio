@@ -164,7 +164,6 @@ function show_react() {
     box_react.style.transform = 'scale(1)';
   }, 300); // A slight delay to allow the display change to take effect
 }
-show_react();
 //end function show component of react
 
 //end functions show component of projects
