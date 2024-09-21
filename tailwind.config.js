@@ -16,20 +16,7 @@ module.exports = {
         },
 
       },
-      keyframes: {
-        typing: {
-          '0%': { width: '0%' },
-          '50%': { width: '80%' },
-          '100%': { width: '0%' },
-        },
-        blink: {
-          '0%, 100%': { borderColor: 'transparent' },
-          '50%': { borderColor: 'black' },
-        },
-      },
-      animation: {
-        'name-typing': 'typing 5s steps(30, end) infinite, blink 1s step-end infinite',
-      },
+      
     },
   },
   plugins: [],

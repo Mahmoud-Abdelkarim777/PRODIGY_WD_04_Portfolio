@@ -6,8 +6,11 @@
     <title>Mahmoud - Web Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./dist/style.css">
+    <!-- external css file  -->
     <link rel="stylesheet" href="./css/style.css">
-    
+    <!-- Load library Typed.js from the CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 
 
 </head>
@@ -81,7 +84,7 @@
     <!-- start hero section  -->
     <section id="home" class="container px-10 mt-10 text-center relative">
         <p class="text-lg font-bold">Hello <i class="fa-solid fa-hand"></i> I'm </p>
-        <p class="text-4xl font-bold animate-name-typing inline-block whitespace-nowrap overflow-hidden border-r-4 border-black	">Mahmoud</p>
+        <p class="text-4xl font-bold block"><span class="typing"></span></p>
         <p class="text-2xl font-bold opacity-45 zoom-animation">Front End Developer</p>
         <p class="text-lg font-bold">
             Welcome to my personal website, I'm really very happy for you to visit my website.
@@ -149,7 +152,13 @@
             <p class="p-2 bg-main w-44 rounded-lg font-bold mb-5">EDUCATION</p>
             <ul class="list-inside [list-style-type:circle]">
                 <li class="text-lg">
-                    Graduated from Faculty of computers and information Assiut University <a href="https://www.eelu.edu.eg/" target="_blank">( <span class="text-main hover:text-black font-bold">EELU</span> )</a> (2020 - 2024)
+                    Graduated from Faculty of computers and information Assiut University <a href="https://www.eelu.edu.eg/" target="_blank">( <span class="text-main hover:text-black font-bold">EELU</span> )</a> (2020 - 2024).
+                </li>
+                <li class="text-lg">
+                    Graduation Project ( A+ ), Gold Price Prediction.
+                </li>
+                <li class="text-lg">
+                    GPA 3.17 out of 4 ( B- ), Good.
                 </li>
             </ul>
         </div>
@@ -167,7 +176,7 @@
             class="mySwiper" 
             
             loop="true" 
-            speed="1100" 
+            speed="1000" 
             autoplay="true" 
             autoplay-delay="0" 
             autoplay-disable-on-interaction="false"
@@ -605,7 +614,7 @@
     <!-- start footer  -->
 <footer class="w-full bg-main p-2 mt-10 fade-in-up-footer">
     <div class="text-center">
-        <p class="font-bold text-3xl my-5 cursor-pointer"><span class="text-white hover:text-black">MAHMOUD</span>.JS</p>
+        <p class="font-bold text-3xl my-5 cursor-pointer"><span class="text-white hover:text-black ">MAHMOUD</span>.JS</p>
         <ul class="flex flex-col md:flex-row justify-center items-center gap-6 mb-5">
             <li><a href="#home" class="font-bold text-lg hover:text-white">Home</a></li>
             <li><a href="#about" class="font-bold text-lg hover:text-white">About</a></li>

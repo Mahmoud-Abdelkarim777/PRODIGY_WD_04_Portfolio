@@ -14,7 +14,15 @@ function handleClick() {
 toggleOpen.addEventListener('click', handleClick);
 toggleClose.addEventListener('click', handleClick);
 // end bar function 
-
+//start library Typed js
+var typed = new Typed(".typing",{
+  strings:["Mahmoud"],
+  typeSpeed: 90,
+  backSpeed:90,
+  backDelay:1000,
+  loop:true
+});
+//end library Typed js
 //start animation fo component of tilte
 
 document.addEventListener('DOMContentLoaded', function () {
